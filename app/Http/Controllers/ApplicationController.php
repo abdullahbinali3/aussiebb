@@ -10,6 +10,6 @@ use function Symfony\Component\Routing\Loader\Configurator\collection;
 class ApplicationController extends Controller
 {
     public function getAll(Request $request){
-        return Application::all();
+        return ApplicationResource::collection(Application::all());
     }
 }

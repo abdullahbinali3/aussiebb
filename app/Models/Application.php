@@ -18,4 +18,16 @@ class Application extends Model
     protected $dispatchesEvents = [
         'created' => ApplicationCreated::class,
     ];
+
+
+    public function customer()
+    {
+        return $this->belongsTo('App\Models\Customer', 'customer_id');
+    }
+
+    public function plan()
+    {
+        return $this->belongsTo('App\Models\Plan', 'plan_id');
+    }
+
 }
