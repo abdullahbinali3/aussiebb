@@ -17,4 +17,6 @@ use App\Http\Controllers\ApplicationController;
 
 Route::get('/application', [ApplicationController::class, 'getAll']);
 
+Route::get('/application/process-orders', [ApplicationController::class, 'processOrders']);
+
 

@@ -19,6 +19,7 @@ class Application extends Model
         'created' => ApplicationCreated::class,
     ];
 
+    protected $fillable = ['order_id'];
 
     public function customer()
     {
